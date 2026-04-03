@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxGuard AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0f1c;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #111827;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h1 {
+            color: #22d3ee;
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+        }
+        .running-line {
+            background: #1e2937;
+            padding: 12px 0;
+            color: #67e8f9;
+            font-weight: bold;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .running-line span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 25s linear infinite;
+        }
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+        button {
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            margin: 10px 8px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-telegram {
+            background: #229ED9;
+            color: white;
+        }
+        .btn-forum {
+            background: #10b981;
+            color: white;
+        }
+        .btn-payment {
+            background: #f97316;
+            color: white;
+        }
+        .disclaimer {
+            background: #1e2937;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TaxGuard AI</h1>
+        <p class="subtitle">Training an AI system for crypto tax calculation through minimal test transactions</p>
+
+        <!-- Бегущая строка -->
+        <div class="running-line">
+            <span>Already 347 people sent minimal test transactions • 30% discount for all testers • Test phase ends in 18 days • Help train AI for accurate crypto tax reporting (IRS, MiCA, DAC8)</span>
+        </div>
+
+        <h2 style="text-align:center; color:#67e8f9;">How it works</h2>
+        <p style="text-align:center; font-size:1.1rem;">
+            Send the smallest possible test transaction you won't even notice.<br>
+            For example: 0.1 USDT or even less.
+        </p>
+
+        <div style="text-align:center; margin:40px 0;">
+            <button class="btn-telegram" onclick="window.open('https://t.me/+твоя_ссылка_на_чат', '_blank')">
+                Join Discussion in Telegram
+            </button>
+            <button class="btn-forum" onclick="window.open('https://твой_форум.frfl.ru', '_blank')">
+                Open Forum
+            </button>
+        </div>
+
+        <h2 style="text-align:center; color:#67e8f9;">Send Test Transaction</h2>
+        <p style="text-align:center;">
+            Choose any network and send a tiny amount (0.1 USDT or less). 
+            This helps train the AI with real data.
+        </p>
+
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> This is an experiment. TaxGuard AI is not a tax advisor and does not provide official tax advice. 
+            All transactions are for educational and testing purposes only. You are fully responsible for your own tax reporting.
+        </div>
+    </div>
+</body>
+</html>
