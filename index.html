@@ -5,119 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaxGuard AI</title>
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            color: #e0e0e0;
-            background: url('https://i.imgur.com/8zK9pL2.jpg') no-repeat center center fixed; /* Твой фон */
-            background-size: cover;
-            min-height: 100vh;
-        }
-        .overlay {
-            background: rgba(10, 15, 28, 0.85); /* Тёмная полупрозрачная подложка */
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 920px;
-            margin: 0 auto;
-            background: rgba(17, 24, 39, 0.95);
-            padding: 45px 35px;
-            border-radius: 16px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
-        }
-        h1 {
-            color: #67e8f9;
-            text-align: center;
-            font-size: 3.1rem;
-            margin-bottom: 12px;
-        }
-        .subtitle {
-            text-align: center;
-            color: #94a3b8;
-            font-size: 1.4rem;
-            margin-bottom: 45px;
-        }
-        .running-line {
-            background: rgba(30, 41, 59, 0.95);
-            padding: 14px 0;
-            color: #67e8f9;
-            font-weight: bold;
-            text-align: center;
+            height: 100%;
+            width: 100%;
             overflow: hidden;
-            white-space: nowrap;
-            margin-bottom: 45px;
-            border-radius: 8px;
-            font-size: 1.08rem;
         }
-        .running-line span {
-            display: inline-block;
-            padding-left: 100%;
-            animation: marquee 32s linear infinite;
-        }
-        @keyframes marquee {
-            from { transform: translateX(0); }
-            to { transform: translateX(-100%); }
-        }
-        button {
-            padding: 16px 34px;
-            font-size: 1.18rem;
-            margin: 12px 10px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: all 0.3s;
-        }
-        button:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-        }
-        .btn-telegram { background: #229ED9; color: white; }
-        .btn-forum { background: #10b981; color: white; }
-        .disclaimer {
-            background: rgba(30, 41, 59, 0.95);
-            padding: 25px;
-            border-radius: 10px;
-            font-size: 0.98rem;
-            color: #cbd5e1;
-            margin-top: 55px;
-            border-left: 6px solid #f97316;
+        body {
+            background: url('https://i.imgur.com/MXhxMWG.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
 <body>
-    <div class="overlay">
-        <div class="container">
-            <h1>TaxGuard AI</h1>
-            <p class="subtitle">Training AI for accurate crypto tax calculation (USA & Europe) through tiny real test transactions</p>
-
-            <!-- Бегущая строка -->
-            <div class="running-line">
-                <span>Already 347 people sent minimal test transactions • 30% discount for all testers • Test phase ends in 18 days • Help train AI for IRS, MiCA & DAC8 compliance</span>
-            </div>
-
-            <div style="text-align:center; margin:50px 0;">
-                <button class="btn-telegram" onclick="window.open('https://t.me/+твоя_ссылка_на_чат', '_blank')">
-                    Join Discussion in Telegram
-                </button>
-                <button class="btn-forum" onclick="window.open('https://твой_форум.frfl.ru', '_blank')">
-                    Open Forum
-                </button>
-            </div>
-
-            <h2 style="text-align:center; color:#67e8f9; margin:50px 0 25px;">Send Test Transaction</h2>
-            <p style="text-align:center; font-size:1.15rem;">
-                Send the smallest possible amount you won't even notice.<br>
-                Example: 0.1 USDT or even less. The transaction must be real.
-            </p>
-
-            <div class="disclaimer">
-                <strong>Disclaimer:</strong> This is an educational experiment only. TaxGuard AI is not a tax advisor and does not provide official tax advice. 
-                All transactions are for testing and training purposes. You are fully responsible for your own tax obligations.
-            </div>
-        </div>
-    </div>
 </body>
 </html>
