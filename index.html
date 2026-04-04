@@ -13,6 +13,7 @@
         body {
             background: url('https://i.imgur.com/92fr59F.jpeg') no-repeat center center fixed;
             background-size: cover;
+            background-position: center;
             font-family: Arial, sans-serif;
             color: white;
             min-height: 100vh;
@@ -24,16 +25,16 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(10, 15, 35, 0.85);   /* Чуть темнее, как просил */
-            backdrop-filter: blur(8px);
+            background: rgba(8, 12, 28, 0.92);
+            backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 15px 40px;
+            padding: 16px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .logo {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             font-weight: bold;
             color: #67e8f9;
         }
@@ -41,22 +42,23 @@
         /* Бегущая строка */
         .running-line {
             position: fixed;
-            top: 60px;
+            top: 62px;
             left: 0;
             width: 100%;
-            background: rgba(20, 30, 60, 0.9);
-            padding: 12px 0;
+            background: rgba(15, 23, 45, 0.95);
+            padding: 13px 0;
             color: #67e8f9;
             font-weight: bold;
             text-align: center;
             overflow: hidden;
             white-space: nowrap;
             z-index: 999;
+            font-size: 1.05rem;
         }
         .running-line span {
             display: inline-block;
             padding-left: 100%;
-            animation: marquee 40s linear infinite;
+            animation: marquee 45s linear infinite;
         }
         @keyframes marquee {
             from { transform: translateX(0); }
@@ -64,37 +66,37 @@
         }
 
         .container {
-            max-width: 900px;
-            margin: 180px auto 80px;
+            max-width: 920px;
+            margin: 200px auto 100px;
             padding: 40px 30px;
             text-align: center;
         }
         h1 {
-            font-size: 3.2rem;
+            font-size: 3.3rem;
             margin-bottom: 25px;
             color: #67e8f9;
         }
         .subtitle {
-            font-size: 1.35rem;
+            font-size: 1.4rem;
             margin-bottom: 50px;
             color: #c0d4ff;
         }
         .medal {
-            margin: 60px auto 40px;
-            max-width: 180px;
+            margin: 70px auto 50px;
+            max-width: 190px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Фиксированная шапка -->
+    <!-- Шапка -->
     <header>
         <div class="logo">TAXGUARD AI</div>
     </header>
 
     <!-- Бегущая строка -->
     <div class="running-line">
-        <span>Even if you’ve never done this before — now is the perfect time • Send one small test transaction • Help us improve TaxGuard AI and get 30% discount on all courses</span>
+        <span>Even if you’ve never done this before — now is the perfect time • Send one small test transaction • Help us improve TaxGuard AI and get 30% discount</span>
     </div>
 
     <div class="container">
